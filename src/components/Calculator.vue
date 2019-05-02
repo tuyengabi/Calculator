@@ -1,24 +1,24 @@
 <template>
   <div class="calculator">
-    <div class="screen">0</div>
-    <div class="btn">C</div>
-    <div class="btn">7</div>
-    <div class="btn">8</div>
-    <div class="btn">9</div>
+    <div class="screen">{{ output || 0 }}</div>
+    <div class="btn" v-on:click="reset">C</div>
+    <div class="btn" v-on:click="add('7')">7</div>
+    <div class="btn" v-on:click="add('8')">8</div>
+    <div class="btn" v-on:click="add('9')">9</div>
     <div class="btn operator">/</div>
-    <div class="btn">del</div>
-    <div class="btn">4</div>
-    <div class="btn">5</div>
-    <div class="btn">6</div>
+    <div class="btn" v-on:click="del">del</div>
+    <div class="btn" v-on:click="add('4')">4</div>
+    <div class="btn" v-on:click="add('5')">5</div>
+    <div class="btn" v-on:click="add('6')">6</div>
     <div class="btn operator">x</div>
-    <div class="btn">%</div>
-    <div class="btn">1</div>
-    <div class="btn">2</div>
-    <div class="btn">3</div>
+    <div class="btn" v-on:click="percent">%</div>
+    <div class="btn" v-on:click="add('1')">1</div>
+    <div class="btn" v-on:click="add('2')">2</div>
+    <div class="btn" v-on:click="add('3')">3</div>
     <div class="btn operator">-</div>
     <div class="btn">.</div>
-    <div class="btn">0</div>
-    <div class="btn egal operator">=</div>
+    <div class="btn" v-on:click="add('0')">0</div>
+    <div class="btn egal operator" v-on:click="result">=</div>
     <div class="btn operator">+</div>
   </div>
 </template>
@@ -28,7 +28,29 @@ export default {
   name: 'Calculator',
   data() {
     return {
-      output: '',
+      output: '700',
+    }
+  },
+
+  methods: {
+    reset() {
+      this.output = '';
+    },
+
+    del(output) {
+      this.output = this.output.substring(0, this.output.length -1);
+    },
+
+    result(output) {
+      this.output = eval(this.output);
+    },
+
+    percent() {
+      this.output = this.output / 100;
+    },
+
+    add(operant) {
+      this.output = this.output + operant;
     }
   }
 }
