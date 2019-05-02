@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <Calculator></Calculator>
   </div>
 </template>
@@ -21,6 +20,11 @@ export default {
 
 <style lang="scss">
 #app {
+  background-image: url("assets/back1.jpg");
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
