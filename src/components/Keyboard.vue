@@ -1,24 +1,24 @@
 <template>
   <div class="keyboard">
-    <Button>AC</Button>
-    <Button>7</Button>
-    <Button>8</Button>
-    <Button>9</Button>
-    <Button>/</Button>
-    <Button>del</Button>
-    <Button>4</Button>
-    <Button>5</Button>
-    <Button>6</Button>
-    <Button>x</Button>
-    <Button>%</Button>
-    <Button>1</Button>
-    <Button>2</Button>
-    <Button>3</Button>
-    <Button>-</Button>
-    <Button>.</Button>
-    <Button>0</Button>
-    <Button>=</Button>
-    <Button>+</Button>
+    <Button operator='AC'></Button>
+    <Button operator='7' v-on:adding="btnAdd()"></Button>
+    <Button operator='8'></Button>
+    <Button operator='9'></Button>
+    <Button operator='/'></Button>
+    <Button operator='del'></Button>
+    <Button operator='4'></Button>
+    <Button operator='5'></Button>
+    <Button operator='6'></Button>
+    <Button operator='x'></Button>
+    <Button operator='%'></Button>
+    <Button operator='1'></Button>
+    <Button operator='2'></Button>
+    <Button operator='3'></Button>
+    <Button operator='-'></Button>
+    <Button operator='.'></Button>
+    <Button operator='0'></Button>
+    <Button operator='='></Button>
+    <Button operator='+'></Button>
   </div>
 </template>
 

@@ -11,6 +11,10 @@ export default {
   name: 'app',
   components: {
     Calculator,
+  },
+  data() {
+    return {
+    }
   }
 }
 </script>

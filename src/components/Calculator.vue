@@ -15,6 +15,33 @@
       Screen,
       Keyboard,
     }
+    data: function() {
+      return {
+        newInput;
+        oldInput
+      }
+
+    }
+    props: [],
+
+    methods: {
+      btnadd: function() {
+       this.newInput = this.oldInput + this.operator 
+      },
+
+      btnreset: function() {
+        this.newInput = 0
+      },
+
+      btndel: function() {
+        this.newInput = oldInput.substring(0, oldInput -1)
+      },
+
+      btnresult: function() {
+        Number(this.newInput)
+      }
+    }
+    
   }
 </script>
 

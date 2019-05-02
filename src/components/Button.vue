@@ -1,5 +1,5 @@
 <template>
-  <div class="button">
+  <div class="button" v-on:click="$emit('adding')">
       {{ operator }}
   </div>
 </template>
@@ -7,13 +7,11 @@
 <script>
   export default{
    name: 'Button',
-   data() {
-     return {
-      operator: ''
-
-     }
+   props: {
+      operator: String
     }
   }
+  
 </script>
 
 <style scoped>
