@@ -19,8 +19,15 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  padding: 0;
+  margin: 0;
+}
 #app {
-  background-image: url("assets/back1.jpg");
+  background-image: url("assets/backimg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   padding: 0;
@@ -30,6 +37,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
