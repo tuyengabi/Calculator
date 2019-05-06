@@ -1,6 +1,8 @@
 # calculator
 --------------
 
+![https://www.github.com/tuyengabi](./src/assets/readmephoto.jpg)
+
 ## Critères qualité
 * Vue JS only => Zéro manipulation native DOM !!! 
 * Framework Vuetify / Material Design
