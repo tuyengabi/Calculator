@@ -1,4 +1,12 @@
 # calculator
+--------------
+
+## Critères qualité
+* Vue JS only => Zéro manipulation native DOM !!! 
+* Framework Vuetify / Material Design
+* Une calculatrice de base (opérations courantes + Modulo) 
+* Librairie Lodash autorisée
+
 
 ## Project setup
 ```
